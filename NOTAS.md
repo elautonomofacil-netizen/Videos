@@ -7,6 +7,7 @@
 - Vídeos: cambiar escenarios y colores; no siempre la peluquería rosa.
 - No inventar historias reales: la madre de Cyn no tiene casos propios. Nuria = personaje.
 - Datos de Hacienda: comprobar siempre con fuentes oficiales.
+- Horarios (Metricool, mejores horas TikTok): carruseles a las 10:00, vídeos a las 18:00. Fines de semana flojos.
 - Flujo: Cyn graba voces → Claude hace, sube a GitHub y programa en Metricool → Cyn fija el comentario.
 
 ## Registro semanal (TikTok)
