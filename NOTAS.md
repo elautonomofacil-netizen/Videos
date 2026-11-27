@@ -18,3 +18,4 @@
 | 20–26 oct | 7 | ~270 (picos 812, 804, 2.305) | 8–29 | 12 → 18 |
 | 27 oct–4 nov | 7 | ~757 | 1–10 | 19 → 33 |
 | 6–20 nov | 6 | ~700 | 1–7 | 34 → 35 |
+- Calculadora gratis: web https://elautonomofacil-netizen.github.io/Videos/calculadora/ · Gumroad gratis https://elautonomofacil.gumroad.com/l/jqhpuh · instalable como app. Promocionarla en todos los CTA ("calculadora gratis en mi perfil").
