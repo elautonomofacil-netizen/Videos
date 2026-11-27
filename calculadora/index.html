@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>¿Cuánto es TUYO? · El Autónomo Fácil</title>
+<meta name="description" content="Calculadora gratis para autónomos: pon lo que cobras y te dice cuánto apartar para Hacienda y cuánto es tuyo de verdad.">
+<style>
+:root{--bg:#fff8e6;--ink:#18203a;--muted:#5b6380;--card:#fff;--yel:#ffd23f;--pink:#ff3d8b;--green:#1f9d6b;--red:#d63a2f;--line:#e8e2d0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+.wrap{max-width:560px;margin:0 auto;padding:20px 16px 48px}
+.brand{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+h1{font-size:32px;line-height:1.1;margin:8px 0 6px;letter-spacing:-.5px}
+h1 span{background:var(--yel);padding:0 6px;border-radius:6px}
+.lead{color:var(--muted);margin-bottom:18px}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:18px;box-shadow:6px 6px 0 var(--ink);padding:18px;margin-bottom:22px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+label:first-child{margin-top:0}
+.hint{font-weight:400;color:var(--muted);font-size:13px}
+input,select{width:100%;font-size:18px;padding:12px;border:2px solid var(--line);border-radius:12px;background:#fffdf6;color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--ink)}
+.row{display:flex;gap:10px}.row>div{flex:1}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{flex:1;min-width:70px;font-size:16px;font-weight:700;padding:10px;border:2px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);cursor:pointer}
+.seg button.on{background:var(--ink);color:#fff}
+.res h2{font-size:15px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:10px}
+.line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:2px dashed var(--line);font-size:16px}
+.line b{white-space:nowrap}
+.line.neg b{color:var(--red)}
+.big{margin-top:14px;background:var(--yel);border-radius:14px;padding:16px;text-align:center}
+.big small{display:block;font-weight:700;font-size:14px}
+.big strong{display:block;font-size:40px;letter-spacing:-1px}
+.big em{font-style:normal;font-size:14px;color:var(--ink)}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.cta{display:block;text-align:center;text-decoration:none;background:var(--pink);color:#fff;font-weight:800;font-size:18px;padding:16px;border-radius:14px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.foot{font-size:12px;color:var(--muted);text-align:center;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">El Autónomo Fácil · gratis</div>
+  <h1>¿Cuánto es <span>TUYO</span> de lo que cobras?</h1>
+  <p class="lead">Pon lo que facturas en un mes y te digo cuánto apartar para Hacienda y la Seguridad Social, y cuánto te queda de verdad.</p>
+
+  <div class="card">
+    <label for="base">Lo que facturas este mes, <u>sin IVA</u> <span class="hint">(€)</span></label>
+    <input id="base" type="number" inputmode="decimal" value="1000" min="0">
+
+    <label>IVA que cobras</label>
+    <div class="seg" id="iva">
+      <button data-v="0.21" class="on">21 %</button><button data-v="0.10">10 %</button><button data-v="0.04">4 %</button><button data-v="0">Sin IVA</button>
+    </div>
+
+    <label>¿Tus clientes te retienen IRPF? <span class="hint">(si facturas a empresas como profesional)</span></label>
+    <div class="seg" id="ret">
+      <button data-v="0" class="on">No</button><button data-v="0.07">Sí, 7 %</button><button data-v="0.15">Sí, 15 %</button>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="gastos">Gastos del mes <span class="hint">(con IVA, €)</span></label>
+        <input id="gastos" type="number" inputmode="decimal" value="100" min="0">
+      </div>
+      <div>
+        <label for="cuota">Tu cuota de autónomo <span class="hint">(€/mes)</span></label>
+        <input id="cuota" type="number" inputmode="decimal" value="300" min="0">
+      </div>
+    </div>
+  </div>
+
+  <div class="card res">
+    <h2>Tu mes, en claro</h2>
+    <div class="line"><span>Te entra en la cuenta</span><b id="r_in">–</b></div>
+    <div class="line neg"><span>IVA para Hacienda (no es tuyo)</span><b id="r_iva">–</b></div>
+    <div class="line neg"><span>Adelanto de IRPF (modelo 130)</span><b id="r_irpf">–</b></div>
+    <div class="line neg"><span>Cuota de autónomo</span><b id="r_cuota">–</b></div>
+    <div class="line neg"><span>Tus gastos</span><b id="r_gastos">–</b></div>
+    <div class="big"><small>Lo que es TUYO de verdad</small><strong id="r_tuyo">–</strong><em id="r_pct"></em></div>
+    <p class="note" id="r_note"></p>
+    <p class="note">Es una estimación para que no te pille el toro. Los gastos se calculan con IVA del 21 %. En la renta del año pueden salir unos euros más o menos según tu caso.</p>
+  </div>
+
+  <a class="cta" href="https://elautonomofacil.gumroad.com/l/kit-autonomo">🧰 Quiero la calculadora completa (año entero, trimestres y cuota)</a>
+  <p class="foot">El Kit del autónomo 2027 incluye la calculadora anual, plantillas de facturas y presupuestos, el calendario con avisos y una guía fácil.<br>@elautonomofacil en TikTok e Instagram</p>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const eur=n=>(Math.round(n*100)/100).toLocaleString('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2,useGrouping:'always'})+' €';
+let iva=0.21,ret=0;
+function seg(id,cb){$(id).querySelectorAll('button').forEach(b=>b.onclick=()=>{$(id).querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');cb(parseFloat(b.dataset.v));calc()})}
+seg('iva',v=>iva=v);seg('ret',v=>ret=v);
+['base','gastos','cuota'].forEach(i=>$(i).addEventListener('input',calc));
+function num(id){const v=parseFloat(String($(id).value).replace(',','.'));return isFinite(v)&&v>0?v:0}
+function calc(){
+  const B=num('base'),G=num('gastos'),C=num('cuota');
+  const gBase=G/1.21,gIva=G-gBase;
+  const entra=B*(1+iva-ret);
+  const ivaPagar=Math.max(0,B*iva-gIva);
+  const rend=B-gBase-C;
+  const irpf=ret>0?0:Math.max(0,0.20*rend);
+  const tuyo=entra-ivaPagar-irpf-C-G;
+  $('r_in').textContent=eur(entra);
+  $('r_iva').textContent='− '+eur(ivaPagar);
+  $('r_irpf').textContent=ret>0?'0,00 € (ya te lo retienen)':'− '+eur(irpf);
+  $('r_cuota').textContent='− '+eur(C);
+  $('r_gastos').textContent='− '+eur(G);
+  $('r_tuyo').textContent=eur(tuyo);
+  $('r_pct').textContent=entra>0?`De cada 100 € que te entran, ${Math.max(0,Math.round(tuyo/entra*100))} son tuyos`:'';
+  let n='';
+  if(B*iva<gIva) n+='Este mes el IVA de tus gastos es mayor que el que cobras: te sale a compensar. ';
+  if(ret>0) n+='Como te retienen IRPF, normalmente no presentas el modelo 130 (si al menos el 70 % de tus facturas llevan retención). ';
+  $('r_note').textContent=n;
+}
+calc();
+</script>
+</body>
+</html>
