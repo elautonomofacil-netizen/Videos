@@ -137,6 +137,7 @@ function lockView(){
   app.innerHTML=`<div class="lock">
   <div class="brand">El Autónomo Fácil</div>
   <h1 class="big">Kit del autónomo <span>2027</span> 🧰</h1>
+  ${(window.navigator.standalone||matchMedia('(display-mode: standalone)').matches)?'':`<div class="card" style="background:#fff3c4"><b>📱 Primero instálala en tu móvil</b><p class="note" style="color:var(--ink)">Así la tendrás siempre a mano y solo pondrás el código una vez.<br><b>iPhone:</b> Safari → Compartir → «Añadir a pantalla de inicio».<br><b>Android:</b> Chrome → ⋮ → «Añadir a pantalla de inicio».<br>Después abre el icono «Kit Autónomo» y pon el código allí.</p></div>`}
   <p class="lead">Escribe el código de acceso que te llegó al comprar el kit. Solo lo tendrás que poner una vez.</p>
   <div class="card"><label for="code">Código de acceso</label><input id="code" autocomplete="off" autocapitalize="characters" placeholder="Ej.: XXXX-XXXX-XXXX">
   <button class="btn dark" onclick="tryCode()">Entrar</button><div class="err" id="cerr"></div></div>
