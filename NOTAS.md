@@ -20,3 +20,7 @@
 | 6–20 nov | 6 | ~700 | 1–7 | 34 → 35 |
 - Calculadora gratis: web https://elautonomofacil-netizen.github.io/Videos/calculadora/ · Gumroad gratis https://elautonomofacil.gumroad.com/l/jqhpuh · instalable como app. Promocionarla en todos los CTA ("calculadora gratis en mi perfil").
 - App del kit: https://elautonomofacil-netizen.github.io/Videos/kit/ (el código de acceso solo va en el Content de Gumroad, nunca en este repo público). Calendario: kit/calendario.ics.
+- REGLA: nunca enseñar en vídeos/carruseles/imágenes el enlace de la app del kit ni el código (recortar barra de Safari y pantalla del código).
+- iPhone: la app instalada tiene almacenamiento propio → pedir instalar primero y poner el código desde el icono (aviso añadido en la pantalla del código).
+- Lanzamiento app: vídeo martes 1 dic 18:00 (4 redes); carrusel 13 "6 cosas que hace" miércoles 2 dic 10:00 (TikTok + Facebook).
+- Pendiente de Cyn: repo privado kit-app + Netlify; activar clave única por venta en Gumroad (license key) y pasar product_id; subir portada/miniatura/descripción nuevas a Gumroad.
