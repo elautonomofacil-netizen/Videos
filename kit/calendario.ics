@@ -1,0 +1,143 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//El Autonomo Facil//Kit 2027//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Plazos Hacienda · Autónomo Fácil
+X-WR-TIMEZONE:Europe/Madrid
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:kitaf-20270201-0@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:⏰ IVA y IRPF del 4.º trimestre 2026 + resumen anual (303, 130, 390)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: IVA y IRPF del 4.º trimestre 2026 + resumen anual (303, 130, 390)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: IVA y IRPF del 4.º trimestre 2026 + resumen anual (303, 130, 390)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20270301-1@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:⏰ Modelo 347 (si superaste 3.005,06 € con un cliente o proveedor)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: Modelo 347 (si superaste 3.005,06 € con un cliente o proveedor)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: Modelo 347 (si superaste 3.005,06 € con un cliente o proveedor)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20270420-2@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:⏰ IVA y IRPF del 1.er trimestre (303 y 130)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: IVA y IRPF del 1.er trimestre (303 y 130)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: IVA y IRPF del 1.er trimestre (303 y 130)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20270630-3@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:⏰ Último día de la renta 2026
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: Último día de la renta 2026
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: Último día de la renta 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20270720-4@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:⏰ IVA y IRPF del 2.º trimestre (303 y 130)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: IVA y IRPF del 2.º trimestre (303 y 130)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: IVA y IRPF del 2.º trimestre (303 y 130)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20271020-5@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:⏰ IVA y IRPF del 3.er trimestre (303 y 130)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: IVA y IRPF del 3.er trimestre (303 y 130)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: IVA y IRPF del 3.er trimestre (303 y 130)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kitaf-20280131-6@elautonomofacil
+DTSTAMP:20261128T182608Z
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280201
+SUMMARY:⏰ IVA y IRPF del 4.º trimestre 2027 + resumen anual (303, 130, 390)
+DESCRIPTION:Último día de plazo. Si lo domicilias\, el plazo acaba unos días antes. Kit del autónomo · El Autónomo Fácil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 7 días: IVA y IRPF del 4.º trimestre 2027 + resumen anual (303, 130, 390)
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mañana: IVA y IRPF del 4.º trimestre 2027 + resumen anual (303, 130, 390)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

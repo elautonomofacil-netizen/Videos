@@ -19,3 +19,4 @@
 | 27 oct–4 nov | 7 | ~757 | 1–10 | 19 → 33 |
 | 6–20 nov | 6 | ~700 | 1–7 | 34 → 35 |
 - Calculadora gratis: web https://elautonomofacil-netizen.github.io/Videos/calculadora/ · Gumroad gratis https://elautonomofacil.gumroad.com/l/jqhpuh · instalable como app. Promocionarla en todos los CTA ("calculadora gratis en mi perfil").
+- App del kit: https://elautonomofacil-netizen.github.io/Videos/kit/ (el código de acceso solo va en el Content de Gumroad, nunca en este repo público). Calendario: kit/calendario.ics.
